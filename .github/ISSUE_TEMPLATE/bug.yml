@@ -1,0 +1,29 @@
+name: Bug
+description: Something is broken or behaving unexpectedly
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "Chrome 130 / macOS 14 / api commit abc1234"

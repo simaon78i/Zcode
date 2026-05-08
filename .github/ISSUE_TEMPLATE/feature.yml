@@ -1,0 +1,32 @@
+name: Feature
+description: A new capability or piece of functionality
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What are we building, in one or two sentences?
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why
+      description: What problem does this solve? Who benefits?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / acceptance criteria
+      description: Concrete checklist of what "done" means.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / open questions

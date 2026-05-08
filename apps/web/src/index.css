@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── CodeRunner code-editor color rules ──────────────────────────────────── */
+
+.code-locked {
+  color: #64748b !important;
+}
+
+.code-editable-number {
+  color: #22d3ee !important;
+  font-weight: 700;
+}
+
+/* ─── Game animations (used by CodeBreaker) ───────────────────────────────── */
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+.animate-shake { animation: shake 0.6s ease-in-out; }
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 6px currentColor; }
+  50% { opacity: 0.55; box-shadow: 0 0 14px currentColor; }
+}
+.animate-glow-pulse { animation: glow-pulse 1.6s ease-in-out infinite; }
+
+@keyframes float-up {
+  0%   { transform: translateY(0);     opacity: 1; }
+  100% { transform: translateY(-30px); opacity: 0; }
+}
+.animate-float-up { animation: float-up 1.2s ease-out forwards; }
+
+@keyframes slide-up {
+  0%   { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.4s ease-out forwards; }
+
+@keyframes fly-across {
+  0%   { transform: translateX(-30px); opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { transform: translateX(calc(100vw + 30px)); opacity: 0; }
+}
+.animate-fly-across { animation: fly-across 2.4s linear infinite; }
+
+@keyframes scan-beam {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-scan-beam { animation: scan-beam 2s linear infinite; }
+
+@keyframes explode {
+  0%   { transform: scale(1);   opacity: 1; }
+  50%  { transform: scale(1.4); opacity: 0.7; }
+  100% { transform: scale(2);   opacity: 0; }
+}
+.animate-explode { animation: explode 0.8s ease-out forwards; }
+
+@keyframes lock-pop {
+  0%   { transform: scale(0.6) rotate(-10deg); opacity: 0; }
+  60%  { transform: scale(1.2) rotate(5deg);   opacity: 1; }
+  100% { transform: scale(1)   rotate(0);     opacity: 1; }
+}
+.animate-lock-pop { animation: lock-pop 0.5s ease-out forwards; }
+
+@keyframes hp-drain {
+  0%   { width: var(--hp-from, 100%); }
+  100% { width: var(--hp-to, 0%); }
+}
+.animate-hp-drain { animation: hp-drain 0.6s ease-out forwards; }
+
+@keyframes spin-fast {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-fast { animation: spin-fast 0.6s linear infinite; }
+
+@keyframes zzz-rise {
+  0%   { transform: translateY(0)    scale(0.8); opacity: 0; }
+  30%  { opacity: 1; }
+  100% { transform: translateY(-20px) scale(1.2); opacity: 0; }
+}
+.animate-zzz-rise { animation: zzz-rise 1.4s ease-out infinite; }

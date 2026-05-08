@@ -1,0 +1,17 @@
+{
+  "name": "@codequest/games-sdk",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.0"
+  }
+}
