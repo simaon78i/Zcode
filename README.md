@@ -1,3 +1,12 @@
+
+
+### 🖼️ Preview
+<div align="center">
+  <img src="Zcode.png" alt="Snake Game Gameplay" width="700">
+  <p><i>The modern glassmorphism interface featuring global leaderboard integration.</i></p>
+</div>
+
+
 ## 🤖 AI Mentor
 
 Powered by OpenRouter. Never gives the full answer — only Socratic nudges. Ramps up hint specificity across up to 5 hints per session. On session completion, automatically generates a factual 100-word summary of the student's struggle and success for the teacher.
