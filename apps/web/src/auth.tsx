@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useState, useCallback, ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:3001/api/auth";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+const API_URL = `${BASE_URL}/api/auth`;
 
 export type Role = "student" | "teacher" | "admin";
 
