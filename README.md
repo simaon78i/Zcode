@@ -31,18 +31,18 @@ gcloud run deploy zcode-web --image gcr.io/[PROJECT-ID]/zcode-web --region me-we
 firebase deploy --only hosting
 ```
 
-###🐳 Running Locally with Docker
+### 🐳 Running Locally with Docker
 git clone [https://github.com/simaon78i/Zcode.git](https://github.com/simaon78i/Zcode.git)
 cd Zcode
 cp apps/api/.env.example apps/api/.env
 # Fill in DATABASE_URL, JWT_SECRET, OPENROUTER_API_KEY
 docker-compose up --build
 
-###🛠️ Running Locally (Without Docker)
+### 🛠️ Running Locally (Without Docker)
 pnpm install
 pnpm dev
 
-###⚙️ Environment Variables
+### ⚙️ Environment Variables
 DATABASE_URL=postgresql://...@...neon.tech/zcode?sslmode=require
 JWT_SECRET=your-long-random-secret
 OPENROUTER_API_KEY=sk-or-v1-...
@@ -50,8 +50,8 @@ OPENROUTER_MODEL=openrouter/auto
 PORT=8080 # For Cloud Run (3001 for local)
 VITE_API_URL=[https://your-api-cloud-run-url.run.app](https://your-api-cloud-run-url.run.app) # For Cloud Web Build
 
-###🏆 Built At
+### 🏆 Built At
 Hack The Gap Hackathon 2026 — ZCode was designed, built, and shipped in a single hackathon sprint. The goal: build something that actually helps real teachers in real classrooms, not just a demo.
 
-###📄 License
+### 📄 License
 MIT
