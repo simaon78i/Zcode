@@ -16,7 +16,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-50 bg-zinc-900/95 backdrop-blur border-b border-zinc-800">
         <div className="flex items-center justify-between px-5 h-14">
           <Link to={user ? homeForRole(user.role) : "/"} className="flex items-center gap-2.5">
-            <img src="/games/zcode-icon.png" alt="ZCode" className="w-9 h-9 rounded-lg object-cover shadow-md" />
+            <img src="/games/zcode-icon.jpeg" alt="ZCode" className="w-9 h-9 rounded-lg object-cover shadow-md" />
             <span className="text-lg font-black tracking-tight">ZCode</span>
           </Link>
 
