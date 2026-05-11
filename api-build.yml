@@ -1,5 +1,4 @@
 steps:
-  # בונה את האימג' של ה-API
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/z-code-495917/zcode-api', '-f', 'apps/api/Dockerfile', '.']
 
