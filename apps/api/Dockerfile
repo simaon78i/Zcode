@@ -2,6 +2,8 @@ FROM node:22-alpine
 
 WORKDIR /app
 
+RUN apk add --no-cache libc6-compat
+
 RUN npm install -g pnpm
 
 COPY package.json pnpm-workspace.yaml ./
@@ -15,6 +17,7 @@ COPY packages/games-sdk ./packages/games-sdk
 
 WORKDIR /app/apps/api
 
-EXPOSE 3001
+ENV PORT=8080
+EXPOSE 8080
 
 CMD ["npx", "tsx", "src/index.ts"]

@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build', 
+      '-t', 'gcr.io/z-code-495917/zcode-web', 
+      '--build-arg', 'VITE_API_URL=${_VITE_API_URL}', 
+      '-f', 'apps/web/Dockerfile', 
+      '.'
+    ]
+
+images:
+  - 'gcr.io/z-code-495917/zcode-web'

@@ -721,7 +721,7 @@ export const CodeBreakerComponent: React.FC<GameProps> = ({
       attempts,
       artifact: code,
       hintsUsed: hintsRevealed,
-    });
+    } as any);
   };
 
   const failedCheck = runResult?.checkResults.find((c) => !c.passed);
