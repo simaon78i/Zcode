@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function App() {
+  //creating the navigate function using the useNavigate hook from react-router-dom
   const navigate = useNavigate();
 
   return (
