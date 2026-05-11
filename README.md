@@ -1,6 +1,8 @@
 
 
 ### 🖼️ Preview
+
+
 <div align="center">
   <img src="Zcode.png" alt="Snake Game Gameplay" width="700">
   <p><i>The modern glassmorphism interface featuring global leaderboard integration.</i></p>
