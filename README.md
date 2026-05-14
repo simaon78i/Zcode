@@ -63,4 +63,4 @@ VITE_API_URL=[https://your-api-cloud-run-url.run.app](https://your-api-cloud-run
 Hack The Gap Hackathon 2026 — ZCode was designed, built, and shipped in a single hackathon sprint. The goal: build something that actually helps real teachers in real classrooms, not just a demo.
 
 ## 📄 License
-MIT
+[MIT](LICENSE)
